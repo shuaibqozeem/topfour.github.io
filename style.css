@@ -1,0 +1,259 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+    background-color: #f4f4f4;
+}
+
+section {
+    padding: 60px 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 30px;
+    text-align: center;
+    color: #333;
+}
+
+/* Navigation Bar */
+nav {
+    position: fixed;
+    width: 100%;
+    color: white;
+    padding-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #333;
+    height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 14px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 4px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #ff4757;
+    color: white;
+}
+
+/* Home Section */
+.home-content {
+    text-align: center;
+    background-color: #333;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    color: white;
+    padding: 120px 20px;
+    /* background-image: url(image/prem\ clubs.jpg); */
+    border-bottom: 1px solid #444;
+}
+
+.home-content h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    font-size: 20px;
+}
+
+/* Section Content */
+.section-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    color: #333;
+}
+
+.section-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Key Players Section */
+.key-players {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.key-players .player {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 200px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.key-players .player img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.key-players .player h3 {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #333;
+}
+
+/* Typing Effect */
+.typing-text.typing {
+    border-right: 0;
+    animation: none;
+}
+
+/* Collapsible Button */
+.collapsible {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 6px;
+    margin: 20px 0;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.collapsible:hover {
+    color: black;
+}
+
+/* Collapsible Content */
+.collapsible-content {
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+}
+
+.collapsible-content .section-content {
+    padding: 20px;
+    background-color: #fff;
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Scroll to Top Button */
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #ff4757;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p, footer a {
+    color: white;
+    margin: 0;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+footer .social-media {
+    margin-top: 10px;
+}
+
+footer .social-media a {
+    margin: 0 12px;
+    color: white;
+    font-size: 22px;
+}
+
+footer .social-media a:hover {
+    color: #ff4757;
+}
+
+#manchester-city {
+    background-color: #1e90ff; /* Manchester City */
+    color: black;
+}
+
+#arsenal {
+    background-color: #e60000; /* Arsenal */
+}
+
+#liverpool {
+    background-color: #c8102e; /* Liverpool */
+}
+
+#manchester-united {
+    background-color: #da291c; /* Manchester United */
+}
+
+img {
+    width: 300px;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        /* flex-direction: column; */
+        align-items: center;
+        background-color: #333;
+        padding: 10px 0;
+        position: static;
+    }
+
+    nav ul li {
+        margin: 8px 0;
+    }
+
+    img {
+        width: 200px;
+    }
+}
